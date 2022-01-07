@@ -1,0 +1,50 @@
+/** @format */
+
+.team {
+  padding: 80px 0 100px;
+  background-color: $gray;
+  .container {
+    position: relative;
+    grid-template-areas: "description slider";
+    grid-gap: 60px;
+  }
+  &__description {
+    grid-area: description;
+    max-width: 440px;
+    &__title {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 56px;
+      color: $violet;
+    }
+    &__text {
+      max-width: 270px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  &__slider {
+    grid-area: slider;
+  }
+}
+.slider {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    &__card {
+      width: 100%;
+      text-align: center;
+
+      p:first-of-type {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 20px;
+      }
+      p:last-of-type {
+        line-height: 24px;
+        margin-top: 12px;
+      }
+    }
+  }
+}

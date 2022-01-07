@@ -1,0 +1,56 @@
+.news{
+    padding: 80px 0 100px;
+    position: relative;
+    &__title{
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 72px;
+        color: $violet;
+        margin-bottom: 109px;
+    }
+    
+    &__link{
+        max-width: 248px;
+        margin: 40px auto 0;
+        color: white !important;
+        padding: 15px 30px !important;
+    }
+    .container{
+        text-align: center;
+    }
+    .slider__control{
+        top: 195px;
+        left: 43%;
+        &__nubmer{
+            top: 185px;
+            left: 49%;
+        }
+        &[data-slide="next"]{
+            left: 54%;
+        }
+    }
+
+
+}
+.news-card{
+    background-color: $gray;
+    max-width: 440px;
+    border-radius: 12px;
+    text-align: left;
+    &__date{
+        color: $darkGray;
+    } 
+    &__title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 8px;
+    }
+    &__text{
+        margin-top: 8px;
+    }
+    .wrap{
+        padding: 20px 20px 28px;
+    }
+
+}

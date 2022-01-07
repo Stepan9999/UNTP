@@ -1,0 +1,105 @@
+/**
+ * /*!
+ * chiefSlider
+ *   site: https://itchief.ru/javascript/slider
+ *   github: https://github.com/itchief/ui-components
+ * 
+ * Copyright 2018-2021 Alexander Maltsev
+ * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+ *
+ * @format
+ */
+
+.slider__container {
+  overflow: hidden;
+}
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slider_disable-transition {
+  transition: none;
+}
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
+}
+.slider__control {
+  position: absolute;
+  top: 331px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  text-align: center;
+  height: 25px;
+  transform: translateY(-50%);
+  &__nubmer {
+    position: absolute;
+    left: 180px;
+    top: 321px;
+  }
+}
+.slider__control_hide {
+  display: none;
+}
+.slider__control[data-slide="prev"] {
+  left: 60px;
+}
+.slider__control[data-slide="next"] {
+  left: 298px;
+}
+.slider__control:focus,
+.slider__control:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background: rgba(0, 0, 0, 0);
+}
+.slider__control::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider__control[data-slide="prev"]::before {
+  background-image: url(../img/prev.png);
+}
+.slider__control[data-slide="next"]::before {
+  background-image: url(../img/next.png);
+}
+.slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.slider__indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.slider__indicators li.active {
+  background-color: rgba(255, 255, 255, 0.9);
+}

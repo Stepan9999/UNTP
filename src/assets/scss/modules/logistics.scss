@@ -1,0 +1,67 @@
+.logistics{
+    background-color: $gray;
+    .container{
+        grid-template-areas: 'title title'
+                             'indicators chartMeter '
+                             'img chartTons ' ;
+        grid-gap:30px 121px;
+        padding: 80px 60px 98px;
+    }
+    &__title{
+        grid-area: title;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 72px;
+        color: $violet;
+
+    }
+    &__indicators{
+        &__cards{
+            grid-area: indicators;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+        &__card{
+            background-color: #fff;
+            max-width: 133px;
+            text-align: center;
+            padding: 12px 0;
+            border-radius: 12px;
+            :first-child{
+                color: $violet;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            :last-child{
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+        &__title{
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+    }
+    &__chart-meter{
+        grid-area:chartMeter;
+    }
+    &__img{
+        grid-area: img;
+    }
+    &__chart-tons{
+        grid-area: chartTons;
+    }
+    &__chart{
+        background-color: white;
+        padding: 20px 24px 14px;
+        border-radius: 16px;
+        height: 100%;
+        h3{
+            margin-bottom: 22px;
+        }
+    }
+}

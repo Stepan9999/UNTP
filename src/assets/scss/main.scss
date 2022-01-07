@@ -1,0 +1,105 @@
+@import "utils/vars";
+@import "utils/fonts";
+@import "utils/reset";
+@import "utils/slider";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/about-us";
+@import "modules/coverage-map";
+@import "modules/brands";
+@import "modules/logistics";
+@import "modules/digital";
+@import "modules/team";
+@import "modules/news";
+@import "modals/_all";
+
+
+
+
+
+body {
+  padding: 0;
+  font-family: $mainFont;
+	font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  background-color: $white;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { 
+  margin: 0; 
+}
+
+a { 
+  line-height: 19px;
+  &:hover{
+    color: $white !important;
+    background: $violet;
+  }
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  &::before, &::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    margin-top: -20px;
+    background: #E9E9E9;
+    z-index: -1;
+  }
+  
+  &::before{
+    left: 35%;
+  }
+  &::after{
+    right: 35%;
+  }
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  margin: 0 auto;
+  max-width: $desktopWidth;
+  padding: 0 60px;
+}
+.button-type-one{
+  font-weight: 600;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+  padding: 12px 20px;
+  background-color: $violet;
+  border-radius: 6px;
+  &:hover{
+    background-color: $darkViolet;
+  }
+
+}
+@media (max-width: $ipadWidth){
+ 
+}
