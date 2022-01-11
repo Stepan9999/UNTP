@@ -4,20 +4,31 @@ header.header
       img(src='../assets/img/Logo.svg')
     nav.links
       li
-        a.link Покрытие
+        a(href="#coverage-map").link Покрытие
       li
-        a.link Торговые марки
+        a(href="#brands").link Торговые марки
       li
-        a.link Новости
+        a(href="/news-page.html").link Новости
       li
-        a.link Вакансии
+        a(href="/vacancies-page.html").link Вакансии
       li
-        a.link Контакты
+        a(href="/contacts-page.html").link Контакты
     button.button-type-one Связаться  с нами
-
-
-
-
-
-
-
+    .header__mob
+      button.button-type-none#nav-menu
+        span
+      .header__mob__modal
+        //- .logo
+        //-   img(src='../assets/img/Logo.svg')    
+        nav.nav
+          li
+            a(href="#coverage-map").link Покрытие
+          li
+            a(href="#brands").link Торговые марки
+          li
+            a(href="/news-page.html").link Новости
+          li
+            a(href="/vacancies-page.html").link Вакансии
+          li
+            a(href="/contacts-page.html").link Контакты
+        button.button-type-one Связаться  с нами

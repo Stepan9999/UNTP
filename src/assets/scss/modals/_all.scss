@@ -1,13 +1,14 @@
-@import "menu";
+@import "news-modal";
+@import "cv-modal";
+@import "contact-modal";
 
 .modal_bg {
 	width: 100%;
-	height:fit-content;
+	height: 100%;
+    backdrop-filter: blur(2px);
 	min-height: 100vh;
-	overflow: hidden;
-	position: absolute;
-	top:  80px ;
-	left: 0;
+    position: fixed;
+    background: rgba(21,21,21,.2);
 	z-index: 20;
 	visibility: hidden;
 	opacity: 0;
@@ -15,6 +16,16 @@
 	&.active {
 		visibility: visible;
 		opacity: 1;
+	}
+    .button-type-none{
+        position: absolute; 
+        top: 40px;
+        right: 40px;
+    }
+	.container{
+		&::before, &::after{
+			display: none;
+		}
 	}
 }
 @media (max-width: $ipadWidth){

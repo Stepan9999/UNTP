@@ -1,0 +1,35 @@
+extends ../layout/layout
+
+block variables
+  - var title = 'UNTP';
+  - var description = 'Contacts page';
+
+block content
+  section.contacts-page
+    .container
+      .contacts-page__container
+        .contacts-page__wrapper
+          h2.contacts-page__title Контакты
+          .contacts-page__wrap
+            p.contacts-page__description Основной офис:
+            p.contacts-page__value Бугаївська 21 Одеса, Україна, 65005
+          .contacts-page__wrap
+            p.contacts-page__description Номера телефонов
+            a(href="tel:+38 (048) 330 18 79").contacts-page__value +38 (048) 330 18 79
+            a(href="tel:+38 (048) 330 18 79").contacts-page__value +38 (048) 330 18 79
+            a(href="tel:+38 (048) 330 18 79").contacts-page__value +38 (048) 330 18 79
+          .contacts-page__wrap
+            p.contacts-page__description Почта
+            a(href="mailto:info@untp.com.ua").contacts-page__value info@untp.com.ua
+          .contacts-page__wrap
+            p.contacts-page__description Режим работы:
+            p.contacts-page__value ежедневно с 8:00 до 20:00
+        .contacts-page__wrapper
+          h2.contacts-page__title Связаться с нами
+          form.contact__form
+            input(type="text" required="required" placeholder="Имя" name="name" ).input-type-one
+            input(required="required" type="tel" placeholder="+38 (0ХХ) ХХХ ХХ ХХ" name="phone" value="").input-type-one.imaskjs__input_tel
+            textarea(placeholder="Описание" name="comment").input-type-one.textarea
+            button.button-type-one Отправить
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.8480301939558!2d30.696723715533718!3d46.47151807912582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6321ebf1909d1%3A0x2608f6b20b743ccc!2z0YPQuy4g0JHRg9Cz0LDQtdCy0YHQutCw0Y8sIDIxLCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCwLCA2NTAwMA!5e0!3m2!1sru!2sru!4v1641590528518!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+

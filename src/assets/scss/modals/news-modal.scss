@@ -1,0 +1,45 @@
+.news-modal{
+    overflow: scroll;
+    &__wrapper{
+        margin: 60px auto;
+        max-width: 1290px;
+        background-color: #fff;
+        border-radius: 16px;
+    }
+    &__wrap{
+        padding: 60px  220px  30px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+
+    } 
+    &__description{
+        line-height: 24px;
+        margin: 20px 0;
+    }
+    &__date{
+        line-height: 24px;
+        color: $darkGray;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    &__title-l {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+    &__text{
+        line-height: 24px;
+    }
+    .button-type-one{
+        margin-top: 44px;  
+        align-self: center; 
+    }   
+}

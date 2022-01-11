@@ -1,0 +1,20 @@
+.news-page{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .container{
+        text-align: center;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 72px;
+        color: $violet;
+        margin-bottom: 60px;
+    }
+    &__wrap{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 120px;
+        justify-content: space-between;
+    }
+}

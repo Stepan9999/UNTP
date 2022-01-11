@@ -1,21 +1,16 @@
+/** @format */
+
 export const menu = () => {
-  window.addEventListener('load', function () {
-    // const buttonMenu = document.getElementById('#button-menu');
-    // const menu = document.getElementById('#menu');
+  window.addEventListener("load", function() {
+   
+    const svg = document.querySelector("svg-map");
+    const paths = document.querySelectorAll("svg-map > path.state");
 
-
-    // buttonMenu.addEventListener('click', () => {
-    //   menu.classList.toggle('active');
-    // })
-    let number = document.querySelector(".slider__control__nubmer > span");
-    let prev = document.querySelector('.slider__control[data-slide="prev"]');
-    let next = document.querySelector('.slider__control[data-slide="next"]');
-    prev.addEventListener('click', ()=>{
-      number.innerHTML--
-    })
-    next.addEventListener('click', ()=>{
-      number.innerHTML++
-    })
-  })
-
-}
+    let i = paths.length;
+    while (i--) {
+      paths[i].addEventListener("mouseover", function(e) {
+        svg.appendChild(e.target);
+      });
+    }
+  });
+};

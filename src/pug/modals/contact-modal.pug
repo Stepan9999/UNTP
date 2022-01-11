@@ -1,0 +1,12 @@
+.modal_bg.contact-modal#contact-modal
+  .container
+    .contact-modal__wrapper
+      .contact-modal__wrap
+        h2.contact-modal__title Связаться с нами
+        form.contact-modal__form
+          input(type="text" required="required" placeholder="Имя" name="name" ).input-type-one
+          input(required="required" type="tel" placeholder="+38 (0ХХ) ХХХ ХХ ХХ" name="phone" value="").input-type-one.imaskjs__input_tel
+          textarea(placeholder="Описание" name="comment").input-type-one.textarea
+          button.button-type-one Отправить
+        button.button-type-none
+          img(src='../assets/img/close.svg')
